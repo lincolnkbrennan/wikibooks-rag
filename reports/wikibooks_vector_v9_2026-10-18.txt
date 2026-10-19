@@ -1,0 +1,151 @@
+Installed 6 packages in 17ms
+Database: /mnt/local_compute/RAG_dbs/wikibooks_rag_pipeline.db
+Model: /mnt/local_compute/models/embeddings/nomic-embed-text-v1.5.Q8_0.gguf
+Embedding configuration: CPU-only, 4 threads
+Ranking: cosine similarity, max two chunks per source entry
+Loading embedding model...
+Model initialization: 0.07s
+Query embedding: 0.06s for 3 queries
+Opening database read-only...
+Chunks to scan: 1,205,509
+
+Vector scan and candidate ranking: 11.86s
+Valid vectors processed: 1,205,509
+Invalid vectors skipped: 0
+Throughput: 101,666 vectors/s
+End-to-end time (excluding model initialization): 11.91s
+
+==============================================================================
+QUERY: How do I learn Python programming?
+==============================================================================
+Candidates retained: 100; diversity limit: 2 chunks per source entry
+
+ 1. cosine=0.84098 | source=Think Python/The way of the program
+    path=Think_Python/The_way_of_the_program | entry_id=88783 | section=The Python programming language
+    Section: The Python programming language The Python programming language The programming language you will learn is Python. Python is an example of a high-level language ; other high-level languages you might have heard of are C, C++, Perl, and Java. There are also low-level languages , sometimes referred to as “machine languages” or “assembly languages.”...
+
+ 2. cosine=0.84021 | source=How to Think Like a Computer Scientist: Learning with Python 2nd Edition/The way of the program
+    path=How_to_Think_Like_a_Computer_Scientist:_Learning_with_Python_2nd_Edition/The_way_of_the_program | entry_id=47157 | section=The way of the program > The Python programming language
+    Section: The way of the program > The Python programming language The Python programming language The programming language you will be learning is Python. Python is an example of a high-level language ; other high-level languages you might have heard of are C++, PHP, and Java. As you might infer from the name high-level language, there are also low-level ...
+
+ 3. cosine=0.84021 | source=How to Think Like a Computer Scientist: Learning with Python 2nd Edition/Print version
+    path=How_to_Think_Like_a_Computer_Scientist:_Learning_with_Python_2nd_Edition/Print_version | entry_id=47148 | section=The way of the program > The Python programming language
+    Section: The way of the program > The Python programming language The Python programming language The programming language you will be learning is Python. Python is an example of a high-level language ; other high-level languages you might have heard of are C++, PHP, and Java. As you might infer from the name high-level language, there are also low-level ...
+
+ 4. cosine=0.83888 | source=Introduction to Python Programming/Printable version
+    path=Introduction_to_Python_Programming/Printable_version | entry_id=50641 | section=Python Programming - Learning Resources > 9. Python Learning Resources
+    Section: Python Programming - Learning Resources > 9. Python Learning Resources 9. Python Learning Resources This guide is intended to serve as a primer to learn Python programming. Only the basics of Python programming are covered in this guide. One can always use a variety of resources available on the WWW to learn Python. At the end of this guide, you ...
+
+ 5. cosine=0.82743 | source=Non-Programmer's Tutorial for Python 2.6/Intro
+    path=Non-Programmer's_Tutorial_for_Python_2.6/Intro | entry_id=62639 | section=First things first
+    Section: First things first First things first So, you've never programmed before. As we go through this tutorial, I will attempt to teach you how to program. There really is only one way to learn to program. You must read code and write code (as computer programs are often called). I'm going to show you lots of code. You should type in code that I show y...
+
+ 6. cosine=0.82692 | source=Learning Python 3 with the Linkbot/Printable version
+    path=Learning_Python_3_with_the_Linkbot/Printable_version | entry_id=54254 | section=Intro > First things first
+    Section: Intro > First things first at the non - programmer ' s tutorial for python 2 . 6 . there will often be a mixture of the text you type ( which is shown in bold ) and the text the program prints on the screen , which would look like this : halt ! who goes there ? linkbot you may pass , linkbot These lessons will introduce you to the terminology or ...
+
+ 7. cosine=0.82587 | source=Non-Programmer's Tutorial for Python 2.6/Print version
+    path=Non-Programmer's_Tutorial_for_Python_2.6/Print_version | entry_id=62643 | section=Intro > First things first
+    Section: Intro > First things first First things first So, you've never programmed before. As we go through this tutorial, I will attempt to teach you how to program. There really is only one way to learn to program. You must read code and write code (as computer programs are often called). I'm going to show you lots of code. You should type in code that ...
+
+ 8. cosine=0.82349 | source=Learning Python 3 with the Linkbot/Intro
+    path=Learning_Python_3_with_the_Linkbot/Intro | entry_id=54248 | section=First things first
+    Section: First things first at the non - programmer ' s tutorial for python 2 . 6 . there will often be a mixture of the text you type ( which is shown in bold ) and the text the program prints on the screen , which would look like this : halt ! who goes there ? linkbot you may pass , linkbot These lessons will introduce you to the terminology or vocabula...
+
+ 9. cosine=0.82339 | source=Non-Programmer's Tutorial for Python 3/Intro
+    path=Non-Programmer's_Tutorial_for_Python_3/Intro | entry_id=62663 | section=First things first
+    Section: First things first First things first So, you've never programmed before. As we go through this tutorial, I will attempt to teach you how to program. There really is only one way to learn to program. You must read code and write code (as computer programs are often called). I'm going to show you lots of code. You should type in code that I show y...
+
+10. cosine=0.82286 | source=Introduction to Python Programming/Python Programming - Learning Resources
+    path=Introduction_to_Python_Programming/Python_Programming_-_Learning_Resources | entry_id=50650 | section=9. Python Learning Resources
+    Section: 9. Python Learning Resources 9. Python Learning Resources This guide is intended to serve as a primer to learn Python programming. Only the basics of Python programming are covered in this guide. One can always use a variety of resources available on the WWW to learn Python. At the end of this guide, you will be able to write simple Python progra...
+
+==============================================================================
+QUERY: What are the principles of organic gardening?
+==============================================================================
+Candidates retained: 100; diversity limit: 2 chunks per source entry
+
+ 1. cosine=0.80174 | source=Horticulture/Organic Gardening
+    path=Horticulture/Organic_Gardening | entry_id=46553 | section=
+    < Organic Gardening (also called Organic Horticulture ) is a growing practice among gardeners around the world, as an alternative to gardening through the use of synthetic chemicals. This wikibook contains techniques and tips for gardeners wishing to use organic methods. While the movement behind organic gardening began as a "back to basics" movement, ove...
+
+ 2. cosine=0.78495 | source=Horticulture/Biological Pest Control
+    path=Horticulture/Biological_Pest_Control | entry_id=46317 | section=Overview
+    Section: Overview Overview A key belief of the organic gardener is that biodiversity furthers health. The more variety a landscape has, the more sustainable it is. The organic gardener therefore works to create a system where the insects that are sometimes called pests and the pathogens that cause diseases are not eradicated, but instead are kept at manag...
+
+ 3. cosine=0.76828 | source=Organic Business Guide/Print version
+    path=Organic_Business_Guide/Print_version | entry_id=64788 | section=The Organic Business Guide - ready to print > Designing the organic production system
+    Section: The Organic Business Guide - ready to print > Designing the organic production system to increase and maintain their yields . an " organic by default " approach , without training farmers on how to improve their ( organic ) farming practices , is thus not very likely to succeed in the long run . even if farmers can be stopped from using chemical ...
+
+ 4. cosine=0.76431 | source=Organic Business Guide/Designing the organic production system
+    path=Organic_Business_Guide/Designing_the_organic_production_system | entry_id=64777 | section=Designing the organic production system
+    Section: Designing the organic production system some of this area to the production of sesame and fonio , a traditional cereal for which there is high demand in the domestic market . a next step will be to promote a leguminous crop like peanuts or beans grown in rotation with cotton and sesame , which will help to improve soil fertility and thus yields ....
+
+ 5. cosine=0.76361 | source=Organic Business Guide/Print version
+    path=Organic_Business_Guide/Print_version | entry_id=64788 | section=The Organic Business Guide - ready to print > Designing the organic production system
+    Section: The Organic Business Guide - ready to print > Designing the organic production system some of this area to the production of sesame and fonio , a traditional cereal for which there is high demand in the domestic market . a next step will be to promote a leguminous crop like peanuts or beans grown in rotation with cotton and sesame , which will he...
+
+ 6. cosine=0.76237 | source=Organic Business Guide/Designing the organic production system
+    path=Organic_Business_Guide/Designing_the_organic_production_system | entry_id=64777 | section=Designing the organic production system
+    Section: Designing the organic production system to increase and maintain their yields . an " organic by default " approach , without training farmers on how to improve their ( organic ) farming practices , is thus not very likely to succeed in the long run . even if farmers can be stopped from using chemical inputs , without proper organic management yie...
+
+ 7. cosine=0.75925 | source=Organic Business Guide/Organic production and Fair Trade
+    path=Organic_Business_Guide/Organic_production_and_Fair_Trade | entry_id=64784 | section=Organic production and Fair Trade > What is organic production?
+    Section: Organic production and Fair Trade > What is organic production? What is organic production? The most simple understanding of organic farming is "No chemical pesticides + No chemical fertilisers + Certification = Premium Price". While this may be a useful formula to begin with, organic farming is really much more than this. Where farmers do nothin...
+
+ 8. cosine=0.75859 | source=Horticulture/Organic Lawn Care
+    path=Horticulture/Organic_Lawn_Care | entry_id=46554 | section=
+    < Organic lawn care is a method of establishing and caring for a garden lawn without the use of synthetic chemical inputs such as pesticides, herbicides, or artificial fertilisers. Using organic practices on a lawn is a good way to avoid exposure to potentially harmful chemicals, since among all the elements of the garden, the lawn is the part that humans...
+
+ 9. cosine=0.75471 | source=Technologies for Rural Development/Complete
+    path=Technologies_for_Rural_Development/Complete | entry_id=86462 | section=Major Questions > Animal Husbandry
+    Section: Major Questions > Animal Husbandry Animal Husbandry Organic farming according to Köpke (1990) comprises the principle of a precise organisation of an agronomically appropriate ( A. Young ), largely self-contained farm organisms. The overall concept makes the combination of plant production and animal husbandry, that is the traditional mixed farm ...
+
+10. cosine=0.75060 | source=Organic Business Guide/Organic production and fair trade
+    path=Organic_Business_Guide/Organic_production_and_fair_trade | entry_id=64785 | section=Organic production and Fair Trade > What is organic production?
+    Section: Organic production and Fair Trade > What is organic production? What is organic production? The most simple understanding of organic farming is "No chemical pesticides + No chemical fertilisers + Certification = Premium Price". While this may be a useful formula to begin with, organic farming is really much more than this. Where farmers do nothin...
+
+==============================================================================
+QUERY: How does a solar photovoltaic cell work?
+==============================================================================
+Candidates retained: 100; diversity limit: 2 chunks per source entry
+
+ 1. cosine=0.82435 | source=Wikijunior:How Things Work/Solar panel
+    path=Wikijunior:How_Things_Work/Solar_panel | entry_id=98322 | section=Who invented it? > How does it work?
+    Section: Who invented it? > How does it work? How does it work? It transforms solar power into regular electricity using the photovoltaic effect. The photovoltaic effect is when light excites electrons in the material to a higher energy state, producing energy.
+
+ 2. cosine=0.80257 | source=Renewable Energy/Solar Photovoltanic (PV)
+    path=Renewable_Energy/Solar_Photovoltanic_(PV) | entry_id=76477 | section=Introduction > How it works
+    Section: Introduction > How it works How it works Solar cells are made out of silicon or other semiconductor materials also used in the microelectronics industry. Electrons are released from the atoms in the semiconductor material when light hits the solar cell. When the photon is re-absorbed by photovoltaic material it knocks an electron away from it's p...
+
+ 3. cosine=0.79296 | source=Build Your Own Solar Power Generator
+    path=Build_Your_Own_Solar_Power_Generator | entry_id=12358 | section=Introduction > Conversion
+    Section: Introduction > Conversion Conversion A solar cell converts light directly into electricity using the “Photovoltaic Effect”. There is no fuel or steam involved. When light hits a solar cell, it instantly produces electricity. Solar cells, however, do not store electricity. In other words, when the cell no longer receives light, it stops producing ...
+
+ 4. cosine=0.77744 | source=Renewable Energy/Solar Photovoltanic (PV)
+    path=Renewable_Energy/Solar_Photovoltanic_(PV) | entry_id=76477 | section=Introduction
+    Section: Introduction Introduction Solar Photovoltaic cells convert sunlight directly into electricity. The name "Photovoltaic" comes from the process of converting photons (lights) to voltage (electricity), hence the name photovoltaic. This process is called PV effect. This process was first noted by a French physicist, Edmund Bequerel, in 1839, who foun...
+
+ 5. cosine=0.76831 | source=Introduction to Inorganic Chemistry/Electronic Properties of Materials: Superconductors and Semiconductors
+    path=Introduction_to_Inorganic_Chemistry/Electronic_Properties_of_Materials:_Superconductors_and_Semiconductors | entry_id=50208 | section=Chapter 10: Electronic Properties of Materials: Superconductors and Semiconductors > 10.6 Diodes, LEDs and solar cells
+    Section: Chapter 10: Electronic Properties of Materials: Superconductors and Semiconductors > 10.6 Diodes, LEDs and solar cells in developing a manufacturable process for p - gan , which is the basis of the blue led . because of the importance of this work in the development of information storage ( blu - ray technology ) and full - spectrum , energy - ef...
+
+ 6. cosine=0.76555 | source=Robotics/Components/Power Sources
+    path=Robotics/Components/Power_Sources | entry_id=76864 | section=Photo voltaic cell
+    Section: Photo voltaic cell Photo voltaic cell Photo Voltaic Cells, also known as solar cells are well known for their use as power sources for satellites, green energy creation and pocket calculators. In robotics solar cells are used mainly in BEAM robots. Commonly these consist of a solar cell which charges a capacitor and a small circuit which allows t...
+
+ 7. cosine=0.76201 | source=Space Transport and Engineering Methods/Resource Extraction
+    path=Space_Transport_and_Engineering_Methods/Resource_Extraction | entry_id=81594 | section=Mining > Energy > Sun/Star Energy > Photovoltaic Energy
+    Section: Mining > Energy > Sun/Star Energy > Photovoltaic Energy Photovoltaic Energy Photovoltaic conversion has been by far the most common way to extract energy in space. This is due to simplicity, scalability, mass, availability, and durability. Photovoltaic cells generate electricity directly without additional conversions or devices, They come in typ...
+
+ 8. cosine=0.76190 | source=Robotics/Print version
+    path=Robotics/Print_version | entry_id=76909 | section=Power Sources > Photo voltaic cell
+    Section: Power Sources > Photo voltaic cell Photo voltaic cell Photo Voltaic Cells, also known as solar cells are well known for their use as power sources for satellites, green energy creation and pocket calculators. In robotics solar cells are used mainly in BEAM robots. Commonly these consist of a solar cell which charges a capacitor and a small circui...
+
+ 9. cosine=0.75624 | source=Introduction to Inorganic Chemistry/Electronic Properties of Materials: Superconductors and Semiconductors
+    path=Introduction_to_Inorganic_Chemistry/Electronic_Properties_of_Materials:_Superconductors_and_Semiconductors | entry_id=50208 | section=Chapter 10: Electronic Properties of Materials: Superconductors and Semiconductors > 10.6 Diodes, LEDs and solar cells
+    Section: Chapter 10: Electronic Properties of Materials: Superconductors and Semiconductors > 10.6 Diodes, LEDs and solar cells acts as a diode . in the light , the photocurrent can be thought of as a constant current source , which is added to the i - v characteristic of the diode . the relationship between the dark and light current in a photovoltaic ce...
+
+10. cosine=0.75374 | source=Electronics/Cells
+    path=Electronics/Cells | entry_id=30275 | section=Cells
+    Section: Cells Cells A cell, or electrochemical cell, Galvanic cell or Voltaic cell, is a component used to store and provide electrical energy. The energy in a cell is stored as a chemical potential energy, and electrical energy can be extracted when the chemicals undergo a chemical reaction. A battery is the term used to refer to multiple cells that are...

@@ -1,0 +1,150 @@
+Database: /mnt/local_compute/RAG_dbs/wikibooks_rag_pipeline.db
+Model: /mnt/local_compute/models/embeddings/nomic-embed-text-v1.5.Q8_0.gguf
+Embedding configuration: CPU-only, 4 threads
+Ranking: cosine similarity, max two chunks per source entry
+Loading embedding model...
+Model initialization: 0.07s
+Query embedding: 0.06s for 3 queries
+Opening database read-only...
+Chunks to scan: 1,205,509
+
+Vector scan and candidate ranking: 10.78s
+Valid vectors processed: 1,205,509
+Invalid vectors skipped: 0
+Throughput: 111,831 vectors/s
+End-to-end time (excluding model initialization): 10.84s
+
+==============================================================================
+QUERY: How do SQL indexes improve database query performance?
+==============================================================================
+Candidates retained: 100; diversity limit: 2 chunks per source entry
+
+ 1. cosine=0.78378 | source=PostgreSQL/Print version
+    path=PostgreSQL/Print_version | entry_id=70968 | section=Indices
+    Section: Indices Indices Relational databases systems store huge amounts of data. Their value only becomes apparent when individual pieces can be retrieved fast enough. E.g., a naive query for a specific telephone number in a phone book with 100 million entries has to read on average 50 million entries. Fortunately, smart algorithms reduce the number of n...
+
+ 2. cosine=0.78006 | source=Oracle Database/Print version
+    path=Oracle_Database/Print_version | entry_id=64627 | section=SQL Cheatsheet > DDL SQL > INDEXES
+    Section: SQL Cheatsheet > DDL SQL > INDEXES INDEXES An index is a method that retrieves records with greater efficiency. An index creates an entry for each value that appears in the indexed columns. By default, Oracle creates B-tree indexes.
+
+ 3. cosine=0.77188 | source=PostgreSQL/Indices
+    path=PostgreSQL/Indices | entry_id=70962 | section=
+    < Relational databases systems store huge amounts of data. Their value only becomes apparent when individual pieces can be retrieved fast enough. E.g., a naive query for a specific telephone number in a phone book with 100 million entries has to read on average 50 million entries. Fortunately, smart algorithms reduce the number of necessary read operation...
+
+ 4. cosine=0.77175 | source=Oracle and DB2, Comparison and Compatibility/Storage Model/Indexes
+    path=Oracle_and_DB2,_Comparison_and_Compatibility/Storage_Model/Indexes | entry_id=64670 | section=Overview
+    Section: Overview Overview Indices are performance structures. Generally, indexes speed access to data. An index operates like a directory – it is organized in a way that you can quickly find the entry you need. Indexes work on the contents of columns in your tables. When you use an index, the database will scan the sorted index to locate the data you nee...
+
+ 5. cosine=0.77001 | source=Oracle Database/SQL Cheatsheet
+    path=Oracle_Database/SQL_Cheatsheet | entry_id=64633 | section=SELECT > DDL SQL > INDEXES
+    Section: SELECT > DDL SQL > INDEXES INDEXES An index is a method that retrieves records with greater efficiency. An index creates an entry for each value that appears in the indexed columns. By default, Oracle creates B-tree indexes.
+
+ 6. cosine=0.76713 | source=Introduction to Information Technology/Print version
+    path=Introduction_to_Information_Technology/Print_version | entry_id=50198 | section=Relational Databases > Index
+    Section: Relational Databases > Index Index An Index is a type of data structure that helps reduce the amount of time for retrieval operations on a database table. Indices give the user the ability to locate any data they seek without having to search every row in a database table by hand. Database indices are set up to use queries that filter using attri...
+
+ 7. cosine=0.76301 | source=MySQL/Print version
+    path=MySQL/Print_version | entry_id=61828 | section=Optimization > Optimising The MySQL Server > Index / Indices
+    Section: Optimization > Optimising The MySQL Server > Index / Indices Index / Indices Indices are a way to locate elements faster. This works for single elements as well as range of elements.
+
+ 8. cosine=0.75603 | source=Structured Query Language/Print version
+    path=Structured_Query_Language/Print_version | entry_id=84238 | section=Managing Indexes > The Concept of Indexes
+    Section: Managing Indexes > The Concept of Indexes The Concept of Indexes DBMSs offer quick access to data stored in their tables. One might think that such high-speed access is due to the fast hardware of modern computers: millions of CPU cycles per second, I/O rates in the range of milliseconds, access to RAM within micro- or nanoseconds, etc. That is t...
+
+ 9. cosine=0.75576 | source=MySQL/Print version
+    path=MySQL/Print_version | entry_id=61828 | section=Optimization > Optimising The MySQL Server > Index / Indices > Another example
+    Section: Optimization > Optimising The MySQL Server > Index / Indices > Another example Another example Another example: let's say we want to optimise this query: mysql> SELECT DISTINCT line FROM weightin; We can do so by adding an index on the 'line' field, in order to group the doubles together, which will avoid the query to rescan the whole table to lo...
+
+10. cosine=0.75485 | source=MySQL/Optimization
+    path=MySQL/Optimization | entry_id=61826 | section=Before Starting To Optimise > Optimising The MySQL Server > Index / Indices
+    Section: Before Starting To Optimise > Optimising The MySQL Server > Index / Indices Index / Indices Indices are a way to locate elements faster. This works for single elements as well as range of elements.
+
+==============================================================================
+QUERY: How does fermentation cause bread dough to rise?
+==============================================================================
+Candidates retained: 100; diversity limit: 2 chunks per source entry
+
+ 1. cosine=0.86450 | source=Cookbook:Bread
+    path=Cookbook:Bread | entry_id=21738 | section=Varieties > Production > First rise
+    Section: Varieties > Production > First rise First rise After mixing, yeasted doughs must undergo a period of fermentation , sometimes called the "first rise", "bulk fermentation", or "proofing". In this stage, the entire dough is covered, greased, or placed in a humid environment to prevent a skin from forming, and the entire mass is allowed to rest and ...
+
+ 2. cosine=0.81686 | source=GCSE Science/Carbon dioxide production of yeast as affected by temperature
+    path=GCSE_Science/Carbon_dioxide_production_of_yeast_as_affected_by_temperature | entry_id=39055 | section=Introduction
+    Section: Introduction Introduction The purpose of this experiment is to discover the effect of temperature upon the rising of bread dough. The process of dough rising is based on yeast. Yeast is a type of fungus which breaks sugar down into smaller components. The type of yeast used for these tests is Saccharomyces cerevisiae , which was domesticated for ...
+
+ 3. cosine=0.81471 | source=NCEA Level 1 Science/Life processes
+    path=NCEA_Level_1_Science/Life_processes | entry_id=61927 | section=Introduction > Effects of microorganisms > Food production > Dairy > Baking and fermentation
+    Section: Introduction > Effects of microorganisms > Food production > Dairy > Baking and fermentation Baking and fermentation Fermentation is the process in which yeast, a type of fungus, is used to raise bread and make alcohol. The respiration process of anaerobic fungi can be written as: Sugar → alcohol + carbon dioxide In baking, yeast causes the dough...
+
+ 4. cosine=0.79743 | source=Cookbook:Bread
+    path=Cookbook:Bread | entry_id=21738 | section=Varieties > Production > Second rise
+    Section: Varieties > Production > Second rise Second rise Some yeasted breads—typically loaves—are given a second rising stage after shaping, and it is this rise that governs the final crumb in the oven. Many of the same principles apply as with the first rise, and this rise is typically always done at warm room temperature. However, unless making small i...
+
+ 5. cosine=0.77729 | source=GCSE Science/Carbon dioxide production of yeast as affected by temperature
+    path=GCSE_Science/Carbon_dioxide_production_of_yeast_as_affected_by_temperature | entry_id=39055 | section=Introduction > Conclusions
+    Section: Introduction > Conclusions amount of carbon dioxide produced , increased temperatures slightly will result in bread rising farther than it would at room temperatures but once at 83 degrees celsius the yeast will die . it can also be concluded that bread will not rise at freezing temperatures , as the carbon dioxide necessary to make the bread do ...
+
+ 6. cosine=0.77492 | source=Cookbook:Gluten
+    path=Cookbook:Gluten | entry_id=23188 | section=Characteristics > Formation > Modulation > Fermentation
+    Section: Characteristics > Formation > Modulation > Fermentation Fermentation Interestingly, fermentation can both strengthen and relax a gluten network. As fermentation releases gas that expands the dough, the expanding bubbles stretch and move the gluten strands, promoting interaction and strengthening the network. Much how overmixing can end up weakeni...
+
+ 7. cosine=0.74972 | source=Cookbook:Deli Roll Bread
+    path=Cookbook:Deli_Roll_Bread | entry_id=22695 | section=Ingredients > Notes, tips, and variations
+    Section: Ingredients > Notes, tips, and variations Notes, tips, and variations - Rising bread requires warmth. Cool or dry weather inhibits the process. When outside temperatures are too cool for breads to rise, place 3–4 hot coals on top of the oven with bread inside. If it's windy, provide a windbreak.
+
+ 8. cosine=0.74894 | source=Cookbook:French Bread
+    path=Cookbook:French_Bread | entry_id=23002 | section=Ingredients > Notes, tips, and variations
+    Section: Ingredients > Notes, tips, and variations Notes, tips, and variations - To get a rapid initial rise, use water about 130–135°F, pour into bowl with yeast mixed with initial flour and salt, and start mixing. - All rising should be in a warm place, like near the refrigerator. - A baking stone, ceramic brick, or even an iron skillet or griddle prehe...
+
+ 9. cosine=0.74610 | source=Cookbook:Easy French Bread
+    path=Cookbook:Easy_French_Bread | entry_id=22788 | section=Ingredients > Notes, tips, and variations
+    Section: Ingredients > Notes, tips, and variations Notes, tips, and variations - To get a rapid initial rise, use water about 130–135°F (55-60°C), and pour into bowl with yeast mixed with initial flour and salt, and start mixing. - All rising should be in a warm place, like near the refrigerator. - A baking stone, ceramic brick, or even an iron skillet or...
+
+10. cosine=0.74450 | source=Cookbook:Sourdough Starter
+    path=Cookbook:Sourdough_Starter | entry_id=25482 | section=Obtaining starter > Making your own starter > Highly-liquid starter by volume > Increasing
+    Section: Obtaining starter > Making your own starter > Highly-liquid starter by volume > Increasing Increasing Many recipes call for more starter than is kept on hand. Starter is easily increased. At its most basic level, simply add more new dough and let it ferment for a day. However, the amount of new dough added affects the pH, this change in pH in tur...
+
+==============================================================================
+QUERY: How do bicycle gears change mechanical advantage?
+==============================================================================
+Candidates retained: 100; diversity limit: 2 chunks per source entry
+
+ 1. cosine=0.77067 | source=Robotics/Design Basics/Mechanical Components
+    path=Robotics/Design_Basics/Mechanical_Components | entry_id=76882 | section=Gears
+    Section: Gears Gears Gears are mechanical parts with cut teeth designed to mesh with teeth on another part so as to transmit or receive force and motion. The cut teeth are also sometimes called cogs. Others like in chainsaws and motors can be tweaked. In Robotics Gears are used to transfer rotational forces between axles. They can change speed and directi...
+
+ 2. cosine=0.76210 | source=Robotics/Print version
+    path=Robotics/Print_version | entry_id=76909 | section=Mechanical Components > Gears
+    Section: Mechanical Components > Gears Gears Gears are mechanical parts with cut teeth designed to mesh with teeth on another part so as to transmit or receive force and motion. The cut teeth are also sometimes called cogs. Others like in chainsaws and motors can be tweaked. In Robotics Gears are used to transfer rotational forces between axles. They can ...
+
+ 3. cosine=0.74109 | source=Science: An Elementary Teacher’s Guide/Simple machines
+    path=Science:_An_Elementary_Teacher’s_Guide/Simple_machines | entry_id=78504 | section=What are Machines? > Mechanical Advantage
+    Section: What are Machines? > Mechanical Advantage Mechanical Advantage When a machine is used to make work easier it produces mechanical advantage by amplifying our force. To figure out the mechanical advantage one divides the load by the effort, this is where one's math skills kick in! Because of friction (which effects how fast a object will go) the me...
+
+ 4. cosine=0.73979 | source=Bicycles/Maintenance and Repair/Derailleurs
+    path=Bicycles/Maintenance_and_Repair/Derailleurs | entry_id=11055 | section=Overview
+    Section: Overview Overview Bicycle derailleurs are used to change gear. They work by shifting the chain. On some bikes there is a derailleur on the front chain-rings and one on the rear-sprockets, but most bikes just have a gear-shifter on the rear wheel. Whether the derailleur is on the front or the back it works by deflecting the chain onto an adjacent ...
+
+ 5. cosine=0.73245 | source=Wikijunior:How Things Work/The Six Simple Machines
+    path=Wikijunior:How_Things_Work/The_Six_Simple_Machines | entry_id=98326 | section=Mechanical Advantage
+    Section: Mechanical Advantage Mechanical Advantage Simple machines are the most basic mechanisms that use mechanical advantage (also called leverage) to multiply force. How do they do that? It's actually because of a concept called work. You know that if you walk 2 miles to school, it's harder than if you had to walk 1 mile to school. How much effort does...
+
+ 6. cosine=0.72897 | source=How to Wheelie
+    path=How_to_Wheelie | entry_id=47171 | section=Bicycle wheelie
+    Section: Bicycle wheelie Bicycle wheelie To perform a wheelie on a bicycle, put the bike in low gear and pedal forward while pulling hard on the handlebars. This can most easily be done from a slow roll. While the front wheel is in the air, the wheelie can be controlled by maintaining an upright posture and leaning to control balance - do not hunch over t...
+
+ 7. cosine=0.72812 | source=Bicycles/Maintenance and Repair/Freewheels and Cassettes
+    path=Bicycles/Maintenance_and_Repair/Freewheels_and_Cassettes | entry_id=11059 | section=General
+    Section: General onto the other . when an upgrade from freewheels to cassettes is to be made , it is most convenient to do so by changing the rear wheel for one with a freehub and cassette already installed . examples of a freehub and of a threaded hub can be seen clearly in the adjacent photographs . Both freewheels and cassettes exist in a variety of co...
+
+ 8. cosine=0.72416 | source=Bicycles/Modifications
+    path=Bicycles/Modifications | entry_id=11100 | section=
+    < The scope and utility of a bicycle can often be extended through modification by the user or through the after-market. - Fixed gear hub conversion htdig_noindex This article is issued from . The text is available under unless otherwise noted. Additional terms may apply for the media files. /htdig_noindex
+
+ 9. cosine=0.72349 | source=Bicycles/Maintenance and Repair/Derailleurs/Front Derailleur Adjustment
+    path=Bicycles/Maintenance_and_Repair/Derailleurs/Front_Derailleur_Adjustment | entry_id=11056 | section=
+    possible to move the derailleur cage closer or further from the top of the chain rings . angle - by rotating the clamp to the left or right , it is possible to adjust the position of the derailleur cage relative to the chain and the chain rings , either parallel or out of parallel . Travel-The front derailleur has two limit screws which limit how far the ...
+
+10. cosine=0.72319 | source=Bicycles/Maintenance and Repair/Derailleurs/Rear Derailleur Adjustment
+    path=Bicycles/Maintenance_and_Repair/Derailleurs/Rear_Derailleur_Adjustment | entry_id=11057 | section=
+    < | | The rear-derailleur is the gear-changing assembly on the rear wheel of some bicycles; it moves the bicycle chain from one sprocket to another . It is cable-operated using a shift control on the handlebar or the front of the frame near the handlebar. The derailleur allows the rider to choose the ease of pedalling, for example, for hill climbing or a ...
